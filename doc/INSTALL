@@ -9,7 +9,7 @@ FreeBSD Install
   $ pkg_add -r gmake git ldns
   $ rehash
   $ mkdir /usr/local/src/; cd /usr/local/src
-  $ git clone git://github.com/gamelinux/passivedns.git
+  $ git clone git://github.com/elrcasey/passivedns.git
   $ cd passivedns/
   $ autoreconf --install
   $ ./configure
@@ -17,7 +17,7 @@ FreeBSD Install
 
 OS X (using Homebrew for dependencies)
   $ brew install automake autoconf ldns jansson
-  $ git clone git://github.com/gamelinux/passivedns.git
+  $ git clone git://github.com/elrcasey/passivedns.git
   $ cd passivedns/
   $ autoreconf --install
   $ ./configure
@@ -26,7 +26,7 @@ OS X (using Homebrew for dependencies)
 Ubuntu
   $ sudo apt-get install git-core binutils-dev libldns1 libldns-dev libpcap-dev 
   # libdate-simple-perl is also needed for pdns2db.pl
-  $ git clone git://github.com/gamelinux/passivedns.git
+  $ git clone git://github.com/elrcasey/passivedns.git
   $ cd passivedns/
   $ autoreconf --install
   $ ./configure
@@ -40,7 +40,7 @@ RedHat (RHEL 6u2 x86_64)
   # perl-DateTime is also needed for pdns2db.pl
   $ wget http://www.tcpdump.org/release/libpcap-1.2.1.tar.gz
   $ tar zxf libpcap-1.2.1.tar.gz; cd libpcap-1.2.1; ./configure; make && make install
-  $ git clone git://github.com/gamelinux/passivedns.git
+  $ git clone git://github.com/elrcasey/passivedns.git
   $ cd passivedns/
   $ autoreconf --install
   $ ./configure
