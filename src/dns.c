@@ -441,6 +441,7 @@ int cache_dns_objects(packetinfo *pi, ldns_rdf *rdf_data,
             case LDNS_RR_TYPE_SOA:
                 if (config.dnsf & DNS_CHK_SOA)
                     offset = 0;
+                    to_offset = 7;
                 break;
             case LDNS_RR_TYPE_MX:
                 if (config.dnsf & DNS_CHK_MX)
