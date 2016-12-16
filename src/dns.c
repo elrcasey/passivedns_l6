@@ -1111,7 +1111,7 @@ void print_passet(pdns_record *l, pdns_asset *p, ldns_rr *rr,
     /* Print to syslog */
     if ((is_err_record && config.output_syslog_nxd) ||
             (!is_err_record && config.output_syslog)) {
-        openlog(PDNS_IDENT, LOG_NDELAY, LOG_LOCAL7);
+        openlog(PDNS_IDENT, LOG_NDELAY, LOG_LOCAL6);
         syslog(LOG_INFO, "%s", output);
         closelog();
     }
